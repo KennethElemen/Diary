@@ -1,0 +1,419 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    margin-left: 10px;
+    margin-top: -12px;
+    font-family: 'Libre Baskerville';
+    display:flex;
+    justify-content:space-between;
+    width:99%;
+    position:fixed;
+    background-color: #8674ffe1;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000000;
+    z-index:1000;
+}
+nav{
+    display: flex;
+    
+}
+a{
+    margin-top: 20px;
+    text-decoration: none;
+    display:flex;
+}
+.logo{
+    letter-spacing:1px;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000000;
+}
+#logout{
+    letter-spacing:1px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: #000000;
+}
+#navicon{ 
+    letter-spacing:100px;
+    font-size: 20px;
+    color: #000000;
+    justify-content: center;
+}
+
+.header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.profile-container {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 200px;
+    background: url('pic2.png') no-repeat center/cover;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url('pic3.png') no-repeat center/cover;
+    margin-top: -75px;
+    margin-left: 20px;
+    z-index: 1;
+    border: 2px solid rgb(161, 152, 152);
+
+}
+
+.user-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    margin-top: -5px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 20px;
+}
+.navbar a:hover {
+    color: black;
+    text-decoration: overline underline ;
+}
+
+.user-post {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    width:42%;
+    margin: auto;
+}
+
+.reactions button {
+    margin-right: 10px;
+}
+
+.status-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#statusText {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f0f2f5;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.status-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-form button:hover {
+    background-color: #166fe5;
+}
+
+#statusText::placeholder {
+    color: #8b9dc3;
+}
+.reactions {
+display: flex;
+align-items: center;
+padding: 10px;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.reactions button {
+cursor: pointer;
+font-size: 25px;
+transition: color 0.3s ease;
+color: black;
+padding: 2px;
+margin-right: 10px;
+border: none;
+background: none;
+
+}
+
+.reactions button i {
+border-radius: 1%;
+}
+
+.reactions button i:hover {
+color: #1877f2;
+}
+.followers {
+margin-left:-45px ;
+}
+
+.info {
+margin-top: 20px;
+margin-left: 140px;
+}
+.user-post, .newsfeed {
+    display: none;
+}
+
+.icon {
+font-size: 24px;
+margin-right: 10px;
+}
+
+/* Add these styles to the friend profiles */
+.friend-profile {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.friend-details {
+margin-left: 20px;
+}
+
+.friend-details h2 {
+font-size: 18px;
+margin: 0;
+}
+
+.profile-picture2 img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+.friend-details button:hover {
+background-color: #166fe5;
+}
+
+#about,#description,#iframe,#music,#friends {
+margin-bottom: 3%;
+}
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+margin-top: 20px;
+width: 50%;
+margin: auto;
+}
+
+.gallery-row {
+display: flex;
+width: 100%;
+margin-bottom: 20px;
+}
+
+.gallery-item {
+width: 48%; /* Adjust as needed for spacing */
+margin-right: 2%; /* Adjust for spacing between items */
+}
+
+.gallery-item:last-child {
+margin-right: 0;
+}
+
+.gallery-item img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+.gallery-item p {
+margin-top: 10px;
+font-size: 14px;
+color: #555;
+}
+
+.music-container {
+background-color: #bae1ff; 
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 80%; /* Adjust the width as needed */
+margin: 0 auto; /* Center the container */
+display: flex;
+margin-top: 20px;
+align-items: center;
+justify-content: space-between;
+color: black;
+}
+
+.music-info img {
+width: 100px; /* Adjust the width of the album cover image */
+height: 80px; /* Adjust the height of the album cover image */
+border-radius: 5px;
+margin-right: 20px;
+}
+
+.song-details h3 {
+font-size: 1.2em;
+margin: 0;
+}
+
+.song-details p {
+margin: 0;
+color: black;
+}
+
+.audio-controls audio {
+
+background-color: transparent; /* Make the audio player background transparent */
+border: none; /* Remove border */
+outline: none; /* Remove outline */
+}
+
+
+.img-des {
+background-color:	#bae1ff ;
+margin-top: -5%;
+padding: 5px;
+border-radius: 5px;
+text-align: justify;
+text-align: center;
+color: black;
+font-size: 40px;
+}
+
+h2 {
+margin-top: -3px;
+}
+.newsfeed {
+    width: 700px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 390px;
+}
+
+.post {
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.infopost {
+    display: flex;
+    margin-left: -10px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.infopost img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.infopost .username {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.post .topic {
+    font-weight: bold;
+}
+
+.post .category {
+    color: #000000;
+}
+
+.post .date {
+    color: #000000;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.post .content {
+    margin-top: 10px;
+}
+#posticon{
+    margin-top: 20px;
+    letter-spacing:50px;
+    font-size: 20px;
+    color: #000000;
+}
+.icon-container {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: -200px;
+}
+
+.ellipsis-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: #f2f2f2;
+}
+
+#description {
+    margin-top: 80px;
+}

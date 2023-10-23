@@ -1,0 +1,164 @@
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    font-family: 'Libre Baskerville';
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    position: relative;
+    background-color: #8674ffe1;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000000;
+    z-index: 1000;
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+}
+
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+}
+
+.logo {
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000000;
+}
+
+#logout {
+    letter-spacing: 1px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: #000000;
+}
+
+#navicon {
+    letter-spacing: 100px;
+    font-size: 20px;
+    color: #000000;
+    justify-content: center;
+}
+
+.newsfeed {
+    width: 700px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 350px;
+}
+
+.user-post {
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 10px;
+}
+.reactions button {
+    margin-right: 10px;
+}
+
+.status-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#statusText {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f0f2f5;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.status-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-form button:hover {
+    background-color: #166fe5;
+}
+
+#statusText::placeholder {
+    color: #8b9dc3;
+}
+
+.reactions {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.reactions button {
+    cursor: pointer;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    color: black;
+    padding: 2px;
+    margin-right: 10px;
+    border: none;
+    background: none;
+}
+
+.reactions button i {
+    border-radius: 1%;
+}
+
+.reactions button i:hover {
+    color: #1877f2;
+}
+
+/* Add these styles to the friend profiles */
+.friend-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.friend-details {
+    margin-left: 20px;
+}
+
+.friend-details h2 {
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 18px;
+    margin: 0;
+}
+
+.profile-picture2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.friend-details button:hover {
+    background-color: #166fe5;
+}
